@@ -1,0 +1,13 @@
+Bienvenu {{title}}
+
+<div class="row">
+	<div class="col-sm-3">
+		<textarea ng-model="rq" cols="60" rows="20"></textarea>
+		<input type="button" ng-click="launch()" value="Go" />
+		<input type="button" ng-click="all()" value="All" />
+	</div>
+	<div class="col-sm-9">
+		<pre>{{rq_response | json}}</pre>
+	</div>
+	
+</div>
